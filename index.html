@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Тестовое задание</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:700|Roboto:100,300,400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media-queries.css">
+	<script type="text/javascript" src="script/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+</head>
+<body>
+	<header>
+		<div class="log-men">
+			<div class="logo">
+				<a href="#"><img src="images/logo.png"></a>			
+			</div>
+			<!-- Горизонтальное меню -->
+			<div class="menu">
+				<nav class="up-menu">
+					<ul class="menu-item">
+						<li class="item"><a href="#">Регион</a></li>
+						<li class="item"><a href="#">Корпорация</a></li>
+						<li class="item"><a href="#">Услуги</a></li>
+						<li class="item"><a href="#">Новости</a></li>
+						<li class="item"><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+
+<!-- Всплывающее меню -->
+			<button id="men_icon" class="openBtn" for="openClose">
+				<div class="burger"><span></span></div>
+			</button>
+
+			<aside class='men-bar'>
+				<div class="men-bar-list" id="nav">
+					<h3>Меню</h3>
+					<button id="men_icon" class="openBtn" for="openClose">
+							<span class="close-button"></span>
+					</button>
+					<ul>
+						<li class="openBtn"><a href="#">Регион</a></li>
+						<li class="openBtn"><a href="#">Корпорация</a></li>
+						<li class="openBtn"><a href="#">Услуги</a></li>
+						<li class="openBtn"><a href="#">Новости</a></li>
+						<li class="openBtn"><a href="#">Инвестиционная карта</a></li>
+						<li class="openBtn"><a href="#">Проекты</a></li>
+						<li class="openBtn"><a href="#">Площадки</a></li>
+						<li class="openBtn"><a href="#">Контакты</a></li>
+					</ul>
+					<div class="foot">
+						<span>Телефон:</span><a href="tel:+78452796996">+7 (8452) 79-69-96</a><br>
+						<span>Е-mail:</span><a href="mailto:chudinatn@saratovcorporation.ru"> chudinatn@saratovcorporation.ru</a>
+					</div>
+				</div>
+			</aside>
+		</div>		
+		<section class="main">
+			<div class="vector-dot">
+				<div class="vector">
+					<img src="images/vector.png" alt="vector" class="vector">
+					<div class="dot-answer">
+						<div class="dot-answer-two">
+							<p>Площадь для комфортного<br> делового климата</p>
+							<h1>101 000</h1>
+							<p>Квадратных киллометров</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-dot">
+					<button id="dotBtn" class="dot-one dot"></button>
+					<button id="dotBtn" class="dot-two dot"></button>
+					<button id="dotBtn" class="dot-three dot"></button>
+					<button id="dotBtn" class="dot-four dot"></button>
+				</div>
+			</div>
+			<!-- <button id="dotBtn" class="dot active" style="display: none;"><span></span></button> -->
+
+			<div class="block">		
+				<div class="text">
+					<h1>Территория возможностей</h1>
+				</div>
+				<div class="text-small">
+					<p>Сопровождение инвестиционных проектов на территории Саратовской области</p>
+				</div>
+				<button class="button">
+					<span class="sp">Отправить заявку</span>
+					<div class="arrow"><svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M32.3536 4.35356C32.5488 4.15829 32.5488 3.84171 32.3536 3.64645L29.1716 0.464469C28.9763 0.269207 28.6597 0.269207 28.4645 0.464469C28.2692 0.659731 28.2692 0.976314 28.4645 1.17158L31.2929 4L28.4645 6.82843C28.2692 7.02369 28.2692 7.34027 28.4645 7.53554C28.6597 7.7308 28.9763 7.7308 29.1716 7.53554L32.3536 4.35356ZM-3.39977e-08 4.5L32 4.5L32 3.5L3.39977e-08 3.5L-3.39977e-08 4.5Z" fill="white"/></svg>
+					</div>
+				</button>
+				<div class="wrapper">
+					<button class="button-block item-block-left">
+						<svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M29.633 15.3552L30.9634 4.52823L21.4204 0.789917L9.97347 6.43392L0 2.08598L1.34674 13.6366L0.0559875 25.0107L10.6529 27.0626L21.4613 24.9377L31 27.2099L29.633 15.3552ZM21.3851 1.93679L29.8379 5.22495L29.256 9.95922L20.8309 7.75929L21.3851 1.93679ZM20.2669 2.53779L19.821 7.49472L19.8136 7.49296L13.9803 8.26963L13.9454 8.40247C13.9381 8.43113 13.2612 11.0122 12.548 12.1861C12.0864 11.9059 11.5673 11.7182 11.0126 11.6487L10.5397 7.33263L20.2669 2.53779ZM19.3751 13.5944L14.3052 14.3835C14.0322 13.5862 13.5312 12.9014 12.8807 12.4115C13.5444 11.3179 14.1434 9.20077 14.2943 8.64191L19.7826 7.91067L19.3751 13.5944ZM9.50854 7.38525L9.97703 11.6591C8.436 11.8782 7.17208 13.0014 6.7088 14.4938L2.38569 13.803L1.97055 9.66392C3.40347 9.56602 4.47833 9.08465 5.16716 8.22574C5.78813 7.45264 5.96672 6.53801 6.00088 5.85626L9.50854 7.38525ZM1.24808 3.78442L5.60659 5.68431C5.59411 6.31163 5.45669 7.22183 4.86132 7.96362C4.24019 8.73672 3.25228 9.16913 1.92014 9.2559L1.24808 3.78442ZM1.19184 24.1493L2.26406 14.8596L6.52768 15.5416C6.52448 15.6121 6.51762 15.682 6.51762 15.7541C6.51762 16.7216 6.84307 17.6107 7.38488 18.3166L5.17056 20.1521L4.47286 24.784L1.19184 24.1493ZM9.54497 25.7664L4.86364 24.86L5.53982 20.3722L7.64707 18.6261C8.29353 19.3159 9.16828 19.7762 10.1457 19.8713L9.54497 25.7664ZM7.31341 15.7541C7.31341 13.9245 8.7549 12.4366 10.5263 12.4366C12.2987 12.4366 13.7402 13.9246 13.7402 15.7541C13.7402 17.5827 12.2987 19.0707 10.5263 19.0707C8.75485 19.071 7.31341 17.5827 7.31341 15.7541ZM10.6515 25.9805L10.5612 25.9629L11.1866 19.831C13.0833 19.5042 14.5355 17.8028 14.5355 15.7531C14.5355 15.6423 14.5278 15.534 14.5194 15.4251L19.4751 14.6537L19.8887 19.0168C17.7147 19.1222 16.0896 19.8121 15.0666 21.0865C13.8739 22.5739 13.8176 24.4283 13.8794 25.3451L10.6515 25.9805ZM14.2764 25.2677C14.2283 24.3975 14.298 22.6898 15.3736 21.3492C16.325 20.1635 17.8599 19.5237 19.9271 19.4268L20.3675 24.0691L14.2764 25.2677ZM20.794 8.1722L29.2065 10.3681L28.7021 14.4705L20.3956 13.4355L20.794 8.1722ZM27.558 18.0144L23.7305 17.5446L24.4315 24.5534L21.3649 23.873L20.4953 14.4964L20.5847 14.4819L28.6145 15.5341L29.8024 25.8333L24.8333 24.6501L24.1773 18.0132L27.5887 18.4219L27.558 18.0144Z" fill="#0F1D4E"/></svg>
+						<span class="txt-svg">Инвестиционная карта</span>
+						<div class="arrow"><svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.4407 4.35356C24.6359 4.15829 24.6359 3.84171 24.4407 3.64645L21.2587 0.464468C21.0634 0.269206 20.7468 0.269206 20.5516 0.464468C20.3563 0.65973 20.3563 0.976313 20.5516 1.17157L23.38 4L20.5516 6.82843C20.3563 7.02369 20.3563 7.34027 20.5516 7.53554C20.7468 7.7308 21.0634 7.7308 21.2587 7.53554L24.4407 4.35356ZM0.0870971 4.5L24.0871 4.5L24.0871 3.5L0.0870972 3.5L0.0870971 4.5Z" fill="#0F1D4E"/></svg>
+						</div>
+					</button>
+					<button class="button-block item-block-middle">
+						<span class="txt">Проекты</span>
+						<div class="arrow"><svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.4407 4.35356C24.6359 4.15829 24.6359 3.84171 24.4407 3.64645L21.2587 0.464468C21.0634 0.269206 20.7468 0.269206 20.5516 0.464468C20.3563 0.65973 20.3563 0.976313 20.5516 1.17157L23.38 4L20.5516 6.82843C20.3563 7.02369 20.3563 7.34027 20.5516 7.53554C20.7468 7.7308 21.0634 7.7308 21.2587 7.53554L24.4407 4.35356ZM0.0870971 4.5L24.0871 4.5L24.0871 3.5L0.0870972 3.5L0.0870971 4.5Z" fill="#0F1D4E"/></svg>
+						</div>
+					</button>
+					<button class="button-block item-block-right">
+						<span class="txt">Площадки</span>
+						<div class="arrow"><svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.4407 4.35356C24.6359 4.15829 24.6359 3.84171 24.4407 3.64645L21.2587 0.464468C21.0634 0.269206 20.7468 0.269206 20.5516 0.464468C20.3563 0.65973 20.3563 0.976313 20.5516 1.17157L23.38 4L20.5516 6.82843C20.3563 7.02369 20.3563 7.34027 20.5516 7.53554C20.7468 7.7308 21.0634 7.7308 21.2587 7.53554L24.4407 4.35356ZM0.0870971 4.5L24.0871 4.5L24.0871 3.5L0.0870972 3.5L0.0870971 4.5Z" fill="#0F1D4E"/></svg>
+						</div>
+					</button>
+				</div>
+			</div>
+		</section>
+	</header>
+
+<section class="bg-img">
+	<div class="about-reg">
+		<div class="write">
+			<div class="wrap-write">
+				<div class="name"><h2 class="red">О регионе</h2></div>
+				<div class="write-text">
+					<p>Саратовская область – это среда комфортного делового климата, территория привлекательных инвестиционных возможностей. Одновременное сочетание выгодного территориального расположения, уникальных климатических условий, обилия природных ресурсов создает условия для формирования мощного промышленного и сельскохозяйственного потенциала, благоприятного ведения бизнеса, производства товаров и услуг.</p>
+				</div>
+			</div>
+
+			<button class="button modal-button">
+				<span class="sp">Узнать больше</span>
+				<div class="arrow"><svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M32.3536 4.35356C32.5488 4.15829 32.5488 3.84171 32.3536 3.64645L29.1716 0.464469C28.9763 0.269207 28.6597 0.269207 28.4645 0.464469C28.2692 0.659731 28.2692 0.976314 28.4645 1.17158L31.2929 4L28.4645 6.82843C28.2692 7.02369 28.2692 7.34027 28.4645 7.53554C28.6597 7.7308 28.9763 7.7308 29.1716 7.53554L32.3536 4.35356ZM-3.39977e-08 4.5L32 4.5L32 3.5L3.39977e-08 3.5L-3.39977e-08 4.5Z" fill="white"/></svg>
+				</div>			
+			</button>
+		</div>
+
+
+
+
+
+
+		<div class="slider">
+			<input checked type="radio" name="respond" id="desktop">
+			<aside id="slider">
+				<input checked type="radio" name="slider" id="switch1">
+					<input type="radio" name="slider" id="switch2">
+					<input type="radio" name="slider" id="switch3">
+					<input type="radio" name="slider" id="switch4">
+					<input type="radio" name="slider" id="switch5">
+
+				<div id="wrapSlider" class="img-right">
+					<img src="images/field.png" alt="">
+					<img src="images/field.png" alt="">
+					<img src="images/field.png" alt="">
+					<img src="images/field.png" alt="">
+					<img src="images/field.png" alt="">
+				</div>
+
+				<div id="controls">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+				<div id="active">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+
+
+
+				<!-- <div class="mark-slide">
+					<button class="slide">
+						<svg width="19" height="4" viewBox="0 0 19 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.2" x="0.802917" y="0.707275" width="17.6224" height="2.51748" fill="#C4C4C4"/>
+						</svg>
+					</button>
+					<button class="slide">
+						<svg width="19" height="4" viewBox="0 0 19 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.2" x="0.802917" y="0.707275" width="17.6224" height="2.51748" fill="#C4C4C4"/>
+						</svg>
+					</button>
+					<button class="slide">
+						<svg width="19" height="4" viewBox="0 0 19 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.2" x="0.802917" y="0.707275" width="17.6224" height="2.51748" fill="#C4C4C4"/>
+						</svg>
+					</button>
+					<button class="slide">
+						<svg width="19" height="4" viewBox="0 0 19 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.2" x="0.802917" y="0.707275" width="17.6224" height="2.51748" fill="#C4C4C4"/>
+						</svg>
+					</button>
+					<button class="slide">
+						<svg width="19" height="4" viewBox="0 0 19 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.2" x="0.802917" y="0.707275" width="17.6224" height="2.51748" fill="#C4C4C4"/>
+						</svg>
+					</button>
+				</div>
+
+				<div class="wrap-arrow">
+					<button class="arrow-block-left">
+						<svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="1.03137" y="0.5" width="55" height="55" stroke="#8A93B4"/>
+							<div class="block-arrow">
+								<svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="	http://www.w3.org/2000/svg" >
+								<path d="M0.239098 4.15084C0.0438357 4.3461 0.0438356 4.66268 0.239098 4.85795L3.42108 8.03993C3.61634 8.23519 3.93292 8.23519 4.12818 8.03993C4.32345 7.84467 4.32345 7.52808 4.12819 7.33282L1.29976 4.50439L4.12819 1.67597C4.32345 1.4807 4.32345 1.16412 4.12819 0.96886C3.93292 0.773598 3.61634 0.773597 3.42108 0.96886L0.239098 4.15084ZM14.5927 4.00439L0.592651 4.00439L0.592651 5.00439L14.5927 5.00439L14.5927 4.00439Z" fill="white"/>
+								</svg>
+							</div>
+						</svg>
+					</button>
+					<button class="arrow-block-right">
+						<svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="1.03137" y="0.5" width="55" height="55" stroke="#8A93B4"/>
+							<div class="block-arrow">
+								<svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.3805 4.85795C14.5758 4.66269 14.5758 4.3461 14.3805 4.15084L11.1986 0.968861C11.0033 0.773598 10.6867 0.773598 10.4914 0.968861C10.2962 1.16412 10.2962 1.48071 10.4914 1.67597L13.3199 4.50439L10.4914 7.33282C10.2962 7.52808 10.2962 7.84467 10.4914 8.03993C10.6867 8.23519 11.0033 8.23519 11.1986 8.03993L14.3805 4.85795ZM0.0269775 5.00439H14.027V4.00439H0.0269775V5.00439Z" fill="white"/>
+								</svg>
+							</div>
+						</svg>
+					</button>
+				</div> -->
+
+			</aside>
+		</div>
+	</div>
+		<div class="facts">
+			<div class="fact first">
+				<h3>700 мл. т.</h3>
+				<p>Потенциальные<br> запасы нефти</p>
+			</div>
+			<div class="fact second">
+				<h3>26914 км</h3>
+				<p>Протяженность<br>автомобильных дорог</p>
+			</div>
+			<div class="fact third">
+				<h3>709 км</h3>
+				<p>Протяженность<br> водных путей</p>
+			</div>
+			<div class="fact fourth">
+				<h3>2291 км</h3>
+				<p>Протяженность<br> ж/д путей<p>
+			</div>
+		</div>
+
+		<div class="overlay modal-window" id="modal">
+			<div class="popup popup-window">
+				<div class="container">
+					<div class="mod-name">
+						<h2>Регион</h2>
+					</div>
+					<div class="mod-text">
+						<p>Сопровождение инвестиционных проектов в режиме "одного окна". Снижение административных барьеров, помощь в подготовке и оформлении документов, оперативное предоставление информации. На стадии сопровождения Корпорацией от лица инициатора осуществляется взаимодействие с органами исполнительной власти, органами местного самоуправления, ресурсоснабжающими организациями, институтами развития, банковскими подразделениями, а также продвижение проектов на региональном, международном и национальном рынках.</p>
+					</div>
+					<button class="btn-mod">
+					<a href="#" class="animate">
+						<span class="sp">Посмотреть<span>
+					</a>
+					</button>
+				</div>
+				<div class="close-button modal-close"></div>
+			</div>
+		</div>
+</section>
+</body>
+</html>
+
+
+
+
+
